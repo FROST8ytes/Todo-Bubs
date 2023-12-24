@@ -32,6 +32,7 @@
 		C54470082B3887AE005DCF9B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54470072B3887AE005DCF9B /* LoginViewModel.swift */; };
 		C544700A2B3887B9005DCF9B /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54470092B3887B9005DCF9B /* SignupViewModel.swift */; };
 		C544700C2B3887D4005DCF9B /* TodoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C544700B2B3887D4005DCF9B /* TodoListItemViewModel.swift */; };
+		C544700D2B388CD7005DCF9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5446FEE2B38851F005DCF9B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,6 +327,7 @@
 			files = (
 				C5446FBF2B387BF0005DCF9B /* Preview Assets.xcassets in Resources */,
 				C5446FBC2B387BF0005DCF9B /* Assets.xcassets in Resources */,
+				C544700D2B388CD7005DCF9B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +537,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -562,6 +565,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

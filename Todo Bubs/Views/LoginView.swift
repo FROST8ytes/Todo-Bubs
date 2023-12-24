@@ -8,8 +8,66 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Spacer()
+                // MARK: -Header
+                Text("Todo Bubs")
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundStyle(Color.white)
+                Text("Bubs always reminds you :D")
+                    .font(.subheadline)
+                    .foregroundStyle(Color.white)
+                    .padding(.bottom, 40)
+                
+                // MARK: -Login Form
+                VStack(alignment: .leading, spacing: 15) {
+                    TextField("Email Address", text: $email)
+                        .padding()
+                        .background(Color.themeTextField)
+                        .cornerRadius(15.0)
+                        .shadow(radius: 10.0, x: 20, y: 10)
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .background(Color.themeTextField)
+                        .cornerRadius(15.0)
+                        .shadow(radius: 10.0, x: 20, y: 10)
+                }
+                .padding([.leading, .trailing, .bottom], 28)
+                Button(action: {}) {
+                    Text("Sign In")
+                        .font(.headline)
+                        .foregroundStyle(Color.white)
+                        .frame(width: 100, height: 30)
+                        .padding()
+                        .background(Color.green)
+                        .cornerRadius(15.0)
+                        .shadow(radius: 10.0, x: 20, y: 10)
+                }
+                
+                Spacer()
+                
+                // MARK: -Signup Button
+                VStack {
+                    Text("New around here?").foregroundStyle(Color.white)
+                    NavigationLink("Sign Up", destination: SignupView())
+                        .foregroundStyle(Color.teal)
+                }
+                .padding(.bottom, 25.0)
+            }
+            .background(LinearGradient(colors: [.purple, .blue], startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all))
+        }
+    }
+}
+
+extension Color {
+    static var themeTextField: Color {
+        return Color(red: 220.0/255.0, green: 230.0/255.0, blue: 230.0/255.0, opacity: 1.0)
     }
 }
 
