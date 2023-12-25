@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationView {
@@ -25,21 +24,34 @@ struct LoginView: View {
                     .foregroundStyle(Color.white)
                     .padding(.bottom, 40)
                 
+                if !viewModel.errMsg.isEmpty {
+                    Text(viewModel.errMsg)
+                        .padding(15)
+                        .foregroundStyle(Color.white)
+                        .background(Color.red)
+                        .cornerRadius(15.0)
+                        .shadow(radius: 10.0, x: 20, y: 10)
+                        .frame(height: 30)
+                        .padding(.bottom)
+                }
+                
                 // MARK: -Login Form
                 VStack(alignment: .leading, spacing: 15) {
-                    TextField("Email Address", text: $email)
+                    TextField("Email Address", text: $viewModel.email)
                         .padding()
                         .background(Color.themeTextField)
                         .cornerRadius(15.0)
                         .shadow(radius: 10.0, x: 20, y: 10)
-                    SecureField("Password", text: $password)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.none)
+                    SecureField("Password", text: $viewModel.password)
                         .padding()
                         .background(Color.themeTextField)
                         .cornerRadius(15.0)
                         .shadow(radius: 10.0, x: 20, y: 10)
                 }
                 .padding([.leading, .trailing, .bottom], 28)
-                Button(action: {}) {
+                Button(action: { viewModel.login() }) {
                     Text("Sign In")
                         .font(.headline)
                         .foregroundStyle(Color.white)
@@ -65,11 +77,6 @@ struct LoginView: View {
     }
 }
 
-extension Color {
-    static var themeTextField: Color {
-        return Color(red: 220.0/255.0, green: 230.0/255.0, blue: 230.0/255.0, opacity: 1.0)
-    }
-}
 
 #Preview {
     LoginView()

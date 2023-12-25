@@ -33,6 +33,7 @@
 		C544700A2B3887B9005DCF9B /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54470092B3887B9005DCF9B /* SignupViewModel.swift */; };
 		C544700C2B3887D4005DCF9B /* TodoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C544700B2B3887D4005DCF9B /* TodoListItemViewModel.swift */; };
 		C544700D2B388CD7005DCF9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5446FEE2B38851F005DCF9B /* GoogleService-Info.plist */; };
+		C55AFB5B2B39D4F8006E4F0E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55AFB5A2B39D4F8006E4F0E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C54470072B3887AE005DCF9B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C54470092B3887B9005DCF9B /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		C544700B2B3887D4005DCF9B /* TodoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemViewModel.swift; sourceTree = "<group>"; };
+		C55AFB5A2B39D4F8006E4F0E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				C5446FEE2B38851F005DCF9B /* GoogleService-Info.plist */,
 				C5446FBB2B387BF0005DCF9B /* Assets.xcassets */,
 				C5446FB72B387BED005DCF9B /* Todo_BubsApp.swift */,
+				C55AFB5A2B39D4F8006E4F0E /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5446FFE2B388752005DCF9B /* TodoListItem.swift in Sources */,
+				C55AFB5B2B39D4F8006E4F0E /* Extensions.swift in Sources */,
 				C5446FF82B3886C4005DCF9B /* SignupView.swift in Sources */,
 				C544700A2B3887B9005DCF9B /* SignupViewModel.swift in Sources */,
 				C54470042B38878C005DCF9B /* TodoListViewModel.swift in Sources */,

@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct SignupView: View {
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = SignupViewModel()
     
     var body: some View {
         VStack {
@@ -24,21 +23,43 @@ struct SignupView: View {
                 .foregroundStyle(Color.white)
                 .padding(.bottom, 40)
             
-            // MARK: -Login Form
+            if !viewModel.errMsg.isEmpty {
+                Text(viewModel.errMsg)
+                    .padding(15)
+                    .foregroundStyle(Color.white)
+                    .background(Color.red)
+                    .cornerRadius(15.0)
+                    .shadow(radius: 10.0, x: 20, y: 10)
+                    .frame(height: 30)
+                    .padding(.bottom)
+            }
+            
+            // MARK: -Signup Form
             VStack(alignment: .leading, spacing: 15) {
-                TextField("Email Address", text: $email)
+                TextField("Full Name", text: $viewModel.name)
                     .padding()
                     .background(Color.themeTextField)
                     .cornerRadius(15.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
-                SecureField("Password", text: $password)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.words)
+                TextField("Email Address", text: $viewModel.email)
                     .padding()
                     .background(Color.themeTextField)
                     .cornerRadius(15.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.none)
+                SecureField("Password", text: $viewModel.password)
+                    .padding()
+                    .background(Color.themeTextField)
+                    .cornerRadius(15.0)
+                    .shadow(radius: 10.0, x: 20, y: 10)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.none)
             }
             .padding([.leading, .trailing, .bottom], 28)
-            Button(action: {}) {
+            Button(action: { viewModel.signup() }) {
                 Text("Sign Up")
                     .font(.headline)
                     .foregroundStyle(Color.white)
