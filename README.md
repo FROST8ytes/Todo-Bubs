@@ -11,13 +11,10 @@ This app is created for the purpose of learning iOS Development using:
 
 ## Roadmap
 
-- 🟢 Sign In View
-- 🟢 Sign Up View
-- 🟢 Sign In View Model
-- 🟢 Sign Up View Model
-- 🟡 Other views
-- 🔴 View models
-- 🔴 Models
+- 🟡 Todo item detail view
+- 🔴 Todo item edit functionality
+- 🔴 Anonymous login
+- 🔴 Offline save (no login required)
 
 ## Appreciation
 
