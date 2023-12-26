@@ -57,18 +57,9 @@ struct SignupView: View {
                     .shadow(radius: 10.0, x: 20, y: 10)
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.none)
+                CustomButtonView(label: "Sign Up", textColor: .white, buttonColor: .green, action: { viewModel.signup() })
             }
-            .padding([.leading, .trailing, .bottom], 28)
-            Button(action: { viewModel.signup() }) {
-                Text("Sign Up")
-                    .font(.headline)
-                    .foregroundStyle(Color.white)
-                    .frame(width: 100, height: 30)
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(15.0)
-                    .shadow(radius: 10.0, x: 20, y: 10)
-            }
+            .padding([.leading, .trailing])
             
             Spacer()
         }
@@ -79,3 +70,4 @@ struct SignupView: View {
 #Preview {
     SignupView()
 }
+

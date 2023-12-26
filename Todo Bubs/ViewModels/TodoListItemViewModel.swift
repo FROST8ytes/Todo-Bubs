@@ -13,7 +13,9 @@ class TodoListItemViewModel: ObservableObject {
     init() {}
     
     func toggleIsDone(item: TodoItem) {
+        #if DEBUG
         print("Toggling isDone...")
+        #endif
         var newItem = item
         newItem.setDone(!item.isDone)
         

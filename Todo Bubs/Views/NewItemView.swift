@@ -34,11 +34,13 @@ struct NewItemView: View {
             } label: {
                 Text("Save")
                     .foregroundStyle(Color.white)
-                    .padding()
+                    .padding([.top, .bottom])
+                    .contentShape(RoundedRectangle(cornerRadius: 15.0))
+                    .frame(maxWidth: .infinity)
+                    .background(Color.green)
+                    .cornerRadius(15.0)
+                    .padding(.top, 16)
             }
-            .frame(maxWidth: .infinity)
-            .background(Color.green)
-            .cornerRadius(15.0)
             .alert(isPresented: $viewModel.showAlert) {
                 Alert(
                     title: Text("Error"),

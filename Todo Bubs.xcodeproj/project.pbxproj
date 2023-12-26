@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C523E1362B3B6ECE00B5AA64 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C523E1352B3B6ECE00B5AA64 /* CustomButtonView.swift */; };
 		C5446FB82B387BED005DCF9B /* Todo_BubsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5446FB72B387BED005DCF9B /* Todo_BubsApp.swift */; };
 		C5446FBA2B387BED005DCF9B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5446FB92B387BED005DCF9B /* MainView.swift */; };
 		C5446FBC2B387BF0005DCF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5446FBB2B387BF0005DCF9B /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C523E1352B3B6ECE00B5AA64 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		C5446FB42B387BED005DCF9B /* Todo Bubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo Bubs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5446FB72B387BED005DCF9B /* Todo_BubsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_BubsApp.swift; sourceTree = "<group>"; };
 		C5446FB92B387BED005DCF9B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				C5446FF52B3886B4005DCF9B /* LoginView.swift */,
 				C5446FF72B3886C4005DCF9B /* SignupView.swift */,
 				C5446FF92B388725005DCF9B /* TodoListItemView.swift */,
+				C523E1352B3B6ECE00B5AA64 /* CustomButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C523E1362B3B6ECE00B5AA64 /* CustomButtonView.swift in Sources */,
 				C5446FFE2B388752005DCF9B /* TodoListItem.swift in Sources */,
 				C55AFB5B2B39D4F8006E4F0E /* Extensions.swift in Sources */,
 				C5446FF82B3886C4005DCF9B /* SignupView.swift in Sources */,

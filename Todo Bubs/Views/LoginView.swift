@@ -49,18 +49,9 @@ struct LoginView: View {
                         .background(Color.themeTextField)
                         .cornerRadius(15.0)
                         .shadow(radius: 10.0, x: 20, y: 10)
+                    CustomButtonView(label: "Sign In", textColor: .white, buttonColor: .green, action: { viewModel.login() })
                 }
-                .padding([.leading, .trailing, .bottom], 28)
-                Button(action: { viewModel.login() }) {
-                    Text("Sign In")
-                        .font(.headline)
-                        .foregroundStyle(Color.white)
-                        .frame(width: 100, height: 30)
-                        .padding()
-                        .background(Color.green)
-                        .cornerRadius(15.0)
-                        .shadow(radius: 10.0, x: 20, y: 10)
-                }
+                .padding([.leading, .trailing])
                 
                 Spacer()
                 
