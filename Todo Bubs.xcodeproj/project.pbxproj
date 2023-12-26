@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C523E1362B3B6ECE00B5AA64 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C523E1352B3B6ECE00B5AA64 /* CustomButtonView.swift */; };
+		C523E1382B3B85A300B5AA64 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C523E1372B3B85A300B5AA64 /* Launch Screen.storyboard */; };
+		C523E13E2B3B8B5400B5AA64 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = C523E13D2B3B8B5400B5AA64 /* banner.png */; };
+		C523E1402B3B8D9900B5AA64 /* todo-bubs-bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C523E13F2B3B8D9900B5AA64 /* todo-bubs-bg.jpeg */; };
 		C5446FB82B387BED005DCF9B /* Todo_BubsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5446FB72B387BED005DCF9B /* Todo_BubsApp.swift */; };
 		C5446FBA2B387BED005DCF9B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5446FB92B387BED005DCF9B /* MainView.swift */; };
 		C5446FBC2B387BF0005DCF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5446FBB2B387BF0005DCF9B /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 
 /* Begin PBXFileReference section */
 		C523E1352B3B6ECE00B5AA64 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		C523E1372B3B85A300B5AA64 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C523E13D2B3B8B5400B5AA64 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		C523E13F2B3B8D9900B5AA64 /* todo-bubs-bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "todo-bubs-bg.jpeg"; sourceTree = "<group>"; };
 		C5446FB42B387BED005DCF9B /* Todo Bubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo Bubs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5446FB72B387BED005DCF9B /* Todo_BubsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_BubsApp.swift; sourceTree = "<group>"; };
 		C5446FB92B387BED005DCF9B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -211,10 +217,13 @@
 		C5446FED2B388509005DCF9B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C523E13F2B3B8D9900B5AA64 /* todo-bubs-bg.jpeg */,
+				C523E13D2B3B8B5400B5AA64 /* banner.png */,
 				C5446FEE2B38851F005DCF9B /* GoogleService-Info.plist */,
 				C5446FBB2B387BF0005DCF9B /* Assets.xcassets */,
 				C5446FB72B387BED005DCF9B /* Todo_BubsApp.swift */,
 				C55AFB5A2B39D4F8006E4F0E /* Extensions.swift */,
+				C523E1372B3B85A300B5AA64 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -331,8 +340,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C523E13E2B3B8B5400B5AA64 /* banner.png in Resources */,
 				C5446FBF2B387BF0005DCF9B /* Preview Assets.xcassets in Resources */,
 				C5446FBC2B387BF0005DCF9B /* Assets.xcassets in Resources */,
+				C523E1382B3B85A300B5AA64 /* Launch Screen.storyboard in Resources */,
+				C523E1402B3B8D9900B5AA64 /* todo-bubs-bg.jpeg in Resources */,
 				C544700D2B388CD7005DCF9B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,13 +552,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Todo Bubs/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AGPB5UPRG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Todo Bubs";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,13 +585,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Todo Bubs/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AGPB5UPRG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Todo Bubs";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
